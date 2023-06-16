@@ -24,3 +24,11 @@ unzip OpenClash.zip
 cp -r OpenClash-master/luci-app-openclash package
 rm -rf OpenClash.zip
 rm -rf OpenClash-master
+
+# Add OpenClash
+rm -rf package/luci-theme-argon
+wget https://github.com/jerrykuku/luci-theme-argon/archive/refs/heads/master.zip -O Argon.zip
+unzip Argon.zip
+cp -r luci-theme-argon-master package
+rm -rf Argon.zip
+rm -rf luci-theme-argon-master
